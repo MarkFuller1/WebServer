@@ -5,7 +5,7 @@
   } else {
   }
 ?>
-<form action="index.php" method="get">
+<form action="index.php" method="post">
   <input type="hidden" name="act" value="run">
   <input type="submit" value="php button">
 </form>
