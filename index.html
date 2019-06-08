@@ -7,7 +7,16 @@
 	<body>
 		<div class="center">
 			<form action="views/index.php">
-					<button value="Open Script" name="button" type="submit"> Hello! </button>
+				<script>
+function PlaySound(melody) {
+	alert("On Press of "+melody);
+	var h = "2000.wav"
+		var snd = new Audio(path + melody + ".wav");
+	document.write("function called");
+	snd.play();
+}
+				</script>
+				<button value="Open Script" name="button" type="submit"> Hello! </button>
 			</form>
 		</div>
 	</body>

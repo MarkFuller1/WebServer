@@ -1,1 +1,1 @@
-aplay 2000.wav
+sudo aplay 2000.wav
