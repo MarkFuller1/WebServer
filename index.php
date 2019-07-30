@@ -5,7 +5,7 @@ $request = $_SERVER['REDIRECT_URL'];
 switch ($request) {
 case '/' :
 	require __DIR__ . '/views/index.php';
-	shell_exec(script.sh);
+	shell_exec(playSound.sh);
 	break;
 case '' :
 	require __DIR__ . '/views/index.php';
