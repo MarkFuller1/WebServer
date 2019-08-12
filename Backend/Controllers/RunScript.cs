@@ -51,7 +51,7 @@ namespace BackendFramework.MakeSound {
                 var Output = strCmdText.Bash()
 
 
-                return OkResult();
+                return OkObjectResult(Output);
         }
 
 
