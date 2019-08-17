@@ -1,0 +1,24 @@
+{
+  "name": "raspberrypi_webserver",
+  "version": "1.0.0",
+  "description": "web based dog whistle",
+  "main": "playSound.js",
+  "scripts": {
+    "test": "test",
+    "start": "node playSound.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkFuller1/RaspberryPi_WebServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkFuller1/RaspberryPi_WebServer"
+  },
+  "homepage": "https://github.com/MarkFuller1/RaspberryPi_WebServer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-aplay": "^1.0.3"
+  }
+}
