@@ -9,9 +9,18 @@
                 <center>The Whistle Has Been Blown</center>
                 </p>
                 <center>
+                        <script type;="text/javascript">
+                                var clicks = 0;
+function clickCounter() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+};
+                        </script>
+
                         <form action="/playsound" method="GET">
-                                <button id="button">again?</button>
+                                <button id="button" onclick="clickCounter();">again?</button>
                         </form>
+                        <p>Clicks: <a id="clicks">0</a></p>
 
                 </center>
         </body>
