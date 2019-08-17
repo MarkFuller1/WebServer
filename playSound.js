@@ -1,5 +1,7 @@
 var http = require('https');
 var express = require('express');
+const shell = require('shelljs');
+var player = require('play-sound')(opts = {})
 
 var app = express();
 
@@ -16,13 +18,19 @@ var inputs = [{ pin: '11', gpio: '17', value: 1 },
 
 // Express route for incoming requests for a customer name
 app.get('/playsound', function(req, res) {
-  res.status(200).send(inputs[req.params.id]);
         console.log("achieved");
+
+        //play the sound
+        player.play('2000.wav', function(err){
+                if(err) throw err
+        })
+  res.status(200).send(inputs[req.params.id]);
 }); 
 
 // Express route for any other unrecognised incoming requests
 app.get('*', function(req, res) {
   res.status(404).send('Unrecognised API call');
+        console.log("404 achieved");
 });
 
 // Express route to handle errors
@@ -35,7 +43,7 @@ app.use(function(err, req, res, next) {
 });
 
 //Finally, start the server application, listening on port 3000:
-var portNum = 8001;
+var portNum = 8002;
 app.listen(portNum);
 console.log('App Server running at port' + portNum);
 
