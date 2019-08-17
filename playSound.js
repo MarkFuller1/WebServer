@@ -13,6 +13,11 @@ server.set('port', process.env.PORT || portNum);
 
 //Adding routes
 server.get('/',(request,response)=>{
+        console.log('Success');
+
+        //play sound
+        var tone = new Sound('2000.wav').play();
+
         response.sendFile(path.join(path.join(__dirname, 'views'), 'index.html'));
 });
 
