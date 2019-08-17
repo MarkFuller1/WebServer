@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="utf-8" />
-   <title>My Express API server example</title>
-   <script src="http://code.jquery.com/jquery-latest.js"></script> 
-   <script src="myclient.js"></script>
- </head>
- <body>
-   <H1>My Express API server example</H1>
-   <div id="input"></div>
- </body>
+        <head>
+                <meta charset="utf-8" />
+                <script src="http://code.jquery.com/jquery-latest.js"></script> 
+                <script src="client.js"></script> 
+                <link rel="stylesheet" type="text/css" href="buttonstyle.css"></link>
+        </head>
+        <body>
+                <div id="input"></div>
+                <div class="center">
+                        <input id="clickMe" type="button" value="clickMe" onclick="playSoundAPI();" />
+                        <button onclick="playSoundAPI()">Hello</button>
+                </div>
+        </body>
 </html>
-
-<!--
-<!Doctype html>
-<html lang = en>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="buttonstyle.css">
-        <meta charset="utf-8" />
-        <title>Press the button to make a sound</title>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="myclient.js"></script>
-	</head>
-
-
-	<body>
-		<div class="center">
-                <form action="https://192.168.1.39:8000/playsound" method="get">
-                        <button> Hello! </button>
-                </form>
-		</div>
-	</body>
-</html>
--->
