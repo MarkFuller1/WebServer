@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 User=pi
-ExecStart=/home/pi/RaspberryPi_WebServer/pullWhistle.sh
+ExecStart=sudo -u pi -i git --git-dir=/home/pi/RaspberryPi_WebServer/.git --work-tree=/home/pi/RaspberryPi_WebServer/ pull origin master > ~/pullStatus
 WorkingDirectory=/home/pi/RaspberryPi_WebServer/
 
 Restart=on-abort

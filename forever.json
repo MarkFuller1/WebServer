@@ -1,8 +1,0 @@
-{
-        "uid": "playSound.js",
-        "append": true,
-        "watch": false,
-        "script": "playSound.js",
-        "sourceDir": "~/Documents/RaspberryPi_WebServer/",
-        "workingDir": "~/Documents/RaspberryPi_WebServer/"
-}
