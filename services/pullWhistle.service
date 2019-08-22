@@ -1,0 +1,18 @@
+[Unit]
+Description=pull from github
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/home/pi/RaspberryPi_WebServer/pullWhistle.sh
+WorkingDirectory=/home/pi/RaspberryPi_WebServer/
+
+Restart=on-abort
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pullWhistle
+
+[Install]
+WantedBy=multi-user.target

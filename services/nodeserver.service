@@ -1,0 +1,17 @@
+[Unit]
+Description=Node.js Server
+
+[Service]
+ExecStart=/usr/bin/node /home/pi/RaspberryPi_WebServer/playSound.js
+WorkingDirectory=/home/pi/RaspberryPi_WebServer/
+
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=node.js-whistle-server
+
+Environment=NODE_ENV=production PORT 3000
+
+[Install]
+WantedBy=multi-user.target
